@@ -1,0 +1,152 @@
+:root{
+	--blanco: #eae9db;
+	--grisclaro: #f1f1f1;
+	--gris: #d1d1d1;
+	--grismedio: #a1a1a1;
+	--grisoscuro: #818181;
+	--negro: #000000;
+	--rojo: #ea0001;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Pirata One', cursive;
+	scroll-behavior: smooth;	
+}
+
+body{
+	background-color: var(--negro);
+	background-image: url(fondo3.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.article__ul-redes{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+}
+
+.li-redes-soc{
+	height: 150px;
+	width: 48vw;
+	background-color: #eae9dbcc;
+	margin-bottom: 10px;
+	border-radius: 15px;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+}
+
+.li-redes-soc:hover{
+	height: 175px;
+	width: 50.5vw;
+	background-color: var(--rojo);
+	box-shadow: 0 0 20px var(--rojo);
+	transition: .8s;
+}
+
+.img-circular{
+	width: 20vw;
+	height: auto;
+	border-radius: 50%;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.a-redes-soc{
+	color: var(--rojo);
+	text-decoration: none;
+}
+
+.a-redes-soc:hover{
+	color: var(--blanco);
+}
+
+h3{
+	font-size: 2em;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+	padding: 15vh 0 5vh 0;
+}
+
+footer p{
+	color: #eae9db88;
+}
+
+@media screen and (max-width: 1100px){
+	.img-circular{
+		width: 22.5vw;
+	}	
+
+	h3{
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.li-redes-soc{
+		width: 60vw;
+		height: 125px;
+	}
+
+	.li-redes-soc:active{
+		width: 62.5vw;
+		height: 150px;
+	}
+
+	.li-redes-soc:hover{
+		width: 62.5vw;
+		height: 150px;
+	}
+
+	.img-circular{
+		width: 25vw;
+	}	
+
+	h3{
+		font-size: 1.7em;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.li-redes-soc{
+		width: 70vw;
+		height: 100px;
+	}
+
+	.li-redes-soc:hover{
+		width: 72.5vw;
+		height: 125px;
+	}
+
+	.li-redes-soc:active{
+		width: 72.5vw;
+		height: 125px;
+	}
+
+	.img-circular{
+		width: 30vw;
+		height: auto;
+		border-radius: 50%;
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+	}
+
+	h3{
+		font-size: 1.6em;
+	}
+}
